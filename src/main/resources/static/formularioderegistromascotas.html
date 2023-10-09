@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--Autor: Keren Lopez
+    Fecha: 11-09-2023
+-->
+<html lang="es">
+    <head>
+        <title>VetShop - Tu tienda de productos para mascotas</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Compra productos para tus mascotas en VetShop" />
+        <meta name="keywords" content="vetshop, tienda de mascotas, productos para mascotas, accesorios para mascotas, veterinaria, perros, gatos, animales domésticos, clínica veterinaria">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="contenido.html">Contenido</a></li>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <a href="index.html"><img src="img/logo.png" alt="Logo de VetShop" width="100" height="100"></a>
+                <h1>Tu tienda de productos para mascotas</h1>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularioderegistromascotas.html">Formulario</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audio.html">Audio</a></li>
+                </ul>
+            </nav>
+            <img src="img/productos.png" alt=""/>
+
+            <hr>
+        </header>
+        <aside>
+            <h2>Bienvenido a VetShop</h2>
+            <br>
+            <h3>Descubre el mejor cuidado para tus mascotas</h3>
+            <br>
+            <br>
+            <p>
+                En VetShop, nos preocupamos por el bienestar de tus mascotas. Encuentra una amplia gama de productos y servicios de alta calidad para satisfacer todas las necesidades de tus amigos peludos.
+            </p>
+        </aside>
+        <section>
+            <article>
+                <header>
+                    <h2>Solicitud de Información</h2>
+                </header>
+                <form action="Registro" method="POST">
+                    <table border="0" cellspacing="5" cellpadding="5">
+                        <tbody>
+                            <tr>
+                                <td>Nombre</td>
+                                <td><input type="text" name="nombre" placeholder="Nombre Completo" size="40" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Correo Electrónico</td>
+                                <td><input type="email" name="correo" placeholder="correo@correo.com" size="25" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Contraseña</td>
+                                <td><input type="password" name="contraseña" size="10" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Teléfono</td>
+                                <td><input type="tel" name="telefono" size="40" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Dirección</td>
+                                <td>
+                                    <textarea name="direccion" rows="4" cols="40" required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tipo de Mascota</td>
+                                <td>
+                                    <select name="tipo_mascota" required>
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nombre de la Mascota</td>
+                                <td><input type="text" name="nombre_mascota" placeholder="Nombre de la Mascota" size="40" /></td>
+                            </tr>
+                            <tr>
+                                <td>Comentarios</td>
+                                <td>
+                                    <textarea name="comentarios" rows="4" cols="40"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Enviar Foto</td>
+                                <td><input type="file" name="foto" accept="image/*" /></td>
+                            </tr>
+                            <tr>
+                                <td>Declaro bajo juramento que la información es veraz</td>
+                                <td><input type="checkbox" name="jura" required /></td>
+                            </tr>
+                            <tr>
+                                <td>Acciones</td>
+                                <td>
+                                    <input type="reset" value="Limpiar" />
+                                    <input type="submit" value="Enviar" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </article>
+        </section>
+        <footer>
+            Derechos reservados &COPY;&nbsp;|&nbsp; PetShop
+        </footer>
+    </body>
+
+</html>
